@@ -1,0 +1,52 @@
+[
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "protocol": ["bittorrent"],
+    "enabled": true,
+    "remarks": "Direct torrent"
+  },
+  {
+    "port": "443",
+    "network": "udp",
+    "outboundTag": "block",
+    "enabled": true,
+    "remarks": "Block udp443"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
+    "domain": ["geosite:category-ads-all"],
+    "enabled": true,
+    "remarks": "Block ads"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": ["geoip:private"],
+    "domain": ["geosite:private"],
+    "enabled": true,
+    "remarks": "Direct LAN"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": ["geoip:ru"],
+    "enabled": true,
+    "remarks": "Direct Ru IP"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": ["geosite:ru-available-only-inside"],
+    "enabled": true,
+    "remarks": "Direct Ru only"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": ["geosite:ru-category-ru"],
+    "enabled": false,
+    "remarks": "Direct Ru domains"
+  }
+]

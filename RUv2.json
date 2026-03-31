@@ -2,70 +2,64 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "process": [
-      "self/"
-    ],
+    "process": ["self/"],
     "enabled": true,
     "remarks": "Avoid loops"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "protocol": [
-      "bittorrent"
-    ],
+    "protocol": ["bittorrent"],
     "enabled": true,
-    "remarks": "Torrent bypass"
+    "remarks": "Direct torrent"
   },
   {
     "port": "",
     "outboundTag": "block",
-    "domain": [
-      "geosite:category-ads-all"
-    ],
+    "domain": ["geosite:category-ads-all"],
     "enabled": true,
     "remarks": "Block ads"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": [
-      "geoip:private"
-    ],
-    "domain": [
-      "geosite:private"
-    ],
+    "ip": ["geoip:private"],
+    "domain": ["geosite:private"],
     "enabled": true,
-    "remarks": "Private bypass"
+    "remarks": "Direct LAN"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": [
-      "geoip:ru"
-    ],
-    "domain": [
-      "geosite:ru-available-only-inside"
-    ],
+    "ip": ["geoip:ru"],
     "enabled": true,
-    "remarks": "Ru only bypass"
+    "remarks": "Direct Ru IP"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "process": [
-      "BlueArchive.exe"
-    ],
+    "domain": ["geosite:ru-available-only-inside"],
+    "enabled": true,
+    "remarks": "Direct Ru only"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": ["geosite:ru-category-ru"],
+    "enabled": false,
+    "remarks": "Direct Ru domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "process": ["BlueArchive.exe"],
     "enabled": false,
     "remarks": "BlueArchive"
   },
   {
     "port": "",
     "outboundTag": "byedpi",
-    "process": [
-      "Endfield.exe",
-      "D:/Games/GRYPHLINK/"
-    ],
+    "process": ["Endfield.exe", "D:/Games/GRYPHLINK/"],
     "enabled": true,
     "remarks": "Endfield"
   },
@@ -80,22 +74,13 @@
       "domain:shikimori.one"
     ],
     "enabled": true,
-    "remarks": "Google\u002BYT"
+    "remarks": "Byedpi Google\u002BYT"
   },
   {
     "port": "",
     "outboundTag": "proxy",
-    "ip": [
-      "1.0.0.1",
-      "1.1.1.1",
-      "8.8.8.8",
-      "8.8.4.4"
-    ],
-    "domain": [
-      "full:doh.pub",
-      "full:cloudflare-dns.com",
-      "full:dns.google"
-    ],
+    "ip": ["1.0.0.1", "1.1.1.1", "8.8.8.8", "8.8.4.4"],
+    "domain": ["full:doh.pub", "full:cloudflare-dns.com", "full:dns.google"],
     "enabled": false,
     "remarks": "DNS proxy",
     "ruleType": 1
@@ -122,7 +107,40 @@
       "DiscordSystemHelper.exe"
     ],
     "enabled": true,
-    "remarks": "Proccesses"
+    "remarks": "Proxy processes"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:hanidoll.com",
+      "domain:hanidoll.ru",
+      "domain:staticdj.com",
+      "domain:shoplazza.com",
+      "domain:s5.udesk.cn",
+      "domain:img.fantaskycdn.com",
+      "domain:udeskglobal.com",
+      "domain:cloudflarestream.com",
+      "domain:iframe.videodelivery.net"
+    ],
+    "enabled": true,
+    "remarks": "Proxy H domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:hentaicdn.org",
+      "domain:forumlib.me",
+      "domain:imglib.info",
+      "domain:api.inglib.info",
+      "domain:hentailib.me",
+      "domain:fapforfun.net",
+      "domain:ouo.io",
+      "domain:mega.co.nz"
+    ],
+    "enabled": true,
+    "remarks": "Proxy H2 domains"
   },
   {
     "port": "",
@@ -132,23 +150,19 @@
       "domain:discord-attachments-uploads-prd.storage.googleapis.com"
     ],
     "enabled": true,
-    "remarks": "Discord"
+    "remarks": "Proxy Discord"
   },
   {
     "port": "",
     "outboundTag": "proxy",
-    "domain": [
-      "domain:notube.net"
-    ],
+    "domain": ["domain:notube.net"],
     "enabled": true,
-    "remarks": "notube"
+    "remarks": "Proxy notube"
   },
   {
     "port": "",
     "outboundTag": "proxy",
-    "ip": [
-      "geoip:ru-blocked"
-    ],
+    "ip": ["geoip:ru-blocked"],
     "domain": [
       "geosite:ru-blocked",
       "geosite:google-play",
@@ -196,12 +210,12 @@
       "domain:sagernet.org"
     ],
     "enabled": true,
-    "remarks": "Domains"
+    "remarks": "Proxy Domains"
   },
   {
     "port": "0-65535",
     "outboundTag": "direct",
     "enabled": true,
-    "remarks": "Final bypass"
+    "remarks": "Final direct"
   }
 ]
