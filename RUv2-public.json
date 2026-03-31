@@ -3,7 +3,7 @@
     "port": "",
     "outboundTag": "direct",
     "process": ["self/", "xray/", "ciadpi.exe"],
-    "enabled": false,
+    "enabled": true,
     "remarks": "Avoid loops"
   },
   {
@@ -41,6 +41,16 @@
     "process": ["BlueArchive.exe"],
     "enabled": false,
     "remarks": "BlueArchive"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:discord",
+      "domain:discord-attachments-uploads-prd.storage.googleapis.com"
+    ],
+    "enabled": true,
+    "remarks": "Proxy Discord"
   },
   {
     "port": "",
@@ -106,16 +116,6 @@
   {
     "port": "",
     "outboundTag": "proxy",
-    "domain": [
-      "geosite:discord",
-      "domain:discord-attachments-uploads-prd.storage.googleapis.com"
-    ],
-    "enabled": true,
-    "remarks": "Proxy Discord"
-  },
-  {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": ["domain:notube.net"],
     "enabled": true,
     "remarks": "Proxy notube"
@@ -138,6 +138,14 @@
       "geosite:startpage",
       "geosite:gitee",
       "geosite:wikidot",
+      "geosite:google",
+      "geosite:google-play",
+      "geosite:google-gemini",
+      "geosite:ea",
+      "geosite:sentry",
+      "geosite:amazon",
+      "geosite:amazontrust",
+      "geosite:aws",
       "domain:devexpress.com",
       "domain:anidex.info",
       "domain:stackoverflow.com",
@@ -170,7 +178,31 @@
       "domain:myorderbox.com",
       "domain:newgrounds.com",
       "domain:sagernet.org",
-      "domain:steamdb.info"
+      "domain:steamdb.info",
+      "domain:now.gg",
+      "domain:azerionconnect.com",
+      "domain:playgama.com",
+      "domain:gamedistribution.com",
+      "domain:improvedigital.com",
+      "domain:clickup.com",
+      "domain:tailorhq.ai",
+      "domain:jsdelivr.net",
+      "domain:ctfassets.net",
+      "domain:amplitude.com",
+      "domain:clickup-eu.com",
+      "domain:inmobi.com",
+      "domain:cmp.inmobi.com",
+      "domain:crazygames.com",
+      "domain:api.aws",
+      "domain:elephant-games.com",
+      "domain:split.io",
+      "domain:clickup-attachments.com",
+      "domain:appsflyer.com",
+      "domain:xsolla.com",
+      "domain:xsolla.net",
+      "domain:netlify.app",
+      "domain:cults3d.com",
+      "domain:segment.io"
     ],
     "enabled": true,
     "remarks": "Proxy Domains"
