@@ -48,5 +48,19 @@
     "domain": ["geosite:ru-category-ru"],
     "enabled": false,
     "remarks": "Direct Ru domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:vk",
+      "geosite:yandex",
+      "domain:desu.me",
+      "domain:senkuro.me",
+      "domain:mangalib.me",
+      "domain:api.cdnlibs.org"
+    ],
+    "enabled": true,
+    "remarks": "Direct domains"
   }
 ]
