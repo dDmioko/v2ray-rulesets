@@ -2,8 +2,8 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "process": ["self/"],
-    "enabled": true,
+    "process": ["self/", "xray/", "ciadpi.exe"],
+    "enabled": false,
     "remarks": "Avoid loops"
   },
   {
@@ -12,13 +12,6 @@
     "protocol": ["bittorrent"],
     "enabled": true,
     "remarks": "Direct torrent"
-  },
-  {
-    "port": "",
-    "outboundTag": "block",
-    "domain": ["geosite:category-ads-all"],
-    "enabled": true,
-    "remarks": "Block ads"
   },
   {
     "port": "",
@@ -45,23 +38,9 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "domain": ["geosite:ru-category-ru"],
-    "enabled": false,
-    "remarks": "Direct Ru domains"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
     "process": ["BlueArchive.exe"],
     "enabled": false,
     "remarks": "BlueArchive"
-  },
-  {
-    "port": "",
-    "outboundTag": "byedpi",
-    "process": ["Endfield.exe", "D:/Games/GRYPHLINK/"],
-    "enabled": true,
-    "remarks": "Endfield"
   },
   {
     "port": "",
@@ -78,21 +57,36 @@
   },
   {
     "port": "",
+    "outboundTag": "byedpi",
+    "domain": ["geosite:ea"],
+    "enabled": false,
+    "remarks": "ByeDPI Domains"
+  },
+  {
+    "port": "",
     "outboundTag": "proxy",
     "ip": ["1.0.0.1", "1.1.1.1", "8.8.8.8", "8.8.4.4"],
-    "domain": ["full:doh.pub", "full:cloudflare-dns.com", "full:dns.google"],
-    "enabled": false,
+    "enabled": true,
     "remarks": "DNS proxy",
     "ruleType": 1
   },
   {
     "port": "",
     "outboundTag": "proxy",
-    "domain": [
-      "domain:gryphline.com",
-      "domain:algolia.net",
-      "domain:algolianet.com"
+    "domain": ["domain:gryphline.com", "domain:anticheatexpert.com"],
+    "process": [
+      "Endfield.exe",
+      "PlatformProcess.exe",
+      "CefViewWing.exe",
+      "D:/Games/GRYPHLINK/"
     ],
+    "enabled": true,
+    "remarks": "Endfield"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": ["domain:gryphline.com", "domain:anticheatexpert.com"],
     "enabled": false,
     "remarks": "Gryphline"
   },
@@ -172,6 +166,7 @@
       "geosite:ea",
       "geosite:yostar",
       "geosite:cloudflare",
+      "geosite:cloudflare-ipfs",
       "geosite:dlsite",
       "geosite:startpage",
       "geosite:gitee",
@@ -207,10 +202,25 @@
       "domain:ecal.com",
       "domain:myorderbox.com",
       "domain:newgrounds.com",
-      "domain:sagernet.org"
+      "domain:sagernet.org",
+      "domain:steamdb.info"
     ],
     "enabled": true,
     "remarks": "Proxy Domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": ["geosite:ru-category-ru"],
+    "enabled": false,
+    "remarks": "Direct Ru domains"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
+    "domain": ["geosite:category-ads-all"],
+    "enabled": true,
+    "remarks": "Block ads"
   },
   {
     "port": "0-65535",
