@@ -16,31 +16,11 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": ["geoip:private"],
-    "domain": ["geosite:private"],
-    "enabled": true,
-    "remarks": "Direct LAN"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
-    "ip": ["geoip:ru"],
-    "enabled": true,
-    "remarks": "Direct Ru IP"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
-    "domain": ["geosite:ru-available-only-inside"],
-    "enabled": true,
-    "remarks": "Direct Ru only"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
+    "ip": ["geoip:private", "geoip:ru"],
+    "domain": ["geosite:private", "geosite:ru-available-only-inside"],
     "process": ["browser.exe"],
     "enabled": true,
-    "remarks": "Direct Processes"
+    "remarks": "Direct Main"
   },
   {
     "port": "",
@@ -48,7 +28,7 @@
     "domain": ["domain:gryphline.com", "domain:anticheatexpert.com"],
     "process": ["D:\\Games\\GRYPHLINK\\", "Endfield.exe"],
     "enabled": true,
-    "remarks": "Direct Endfield"
+    "remarks": "Endfield"
   },
   {
     "port": "",
@@ -94,13 +74,6 @@
   {
     "port": "",
     "outboundTag": "proxy",
-    "process": ["msedge.exe", "Code.exe", "Telegram.exe"],
-    "enabled": true,
-    "remarks": "Proxy processes"
-  },
-  {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": ["domain:notube.net"],
     "enabled": true,
     "remarks": "Proxy notube"
@@ -108,7 +81,7 @@
   {
     "port": "",
     "outboundTag": "proxy",
-    "ip": ["geoip:ru-blocked"],
+    "ip": ["geoip:ru-blocked", "geoip:telegram"],
     "domain": [
       "geosite:ru-blocked",
       "geosite:amazon",
@@ -150,7 +123,6 @@
       "domain:elephant-games.com",
       "domain:formula1.com",
       "domain:gamedistribution.com",
-      "domain:githubusercontent.com",
       "domain:gmodules.com",
       "domain:hollowknight.wiki",
       "domain:images.weserv.nl",
@@ -187,10 +159,13 @@
       "domain:xsolla.net",
       "domain:yuanshen.site",
       "domain:ziffstatic.com",
-      "domain:notion.site"
+      "domain:notion.site",
+      "domain:foxit.com",
+      "domain:foxitsoftware.com"
     ],
+    "process": ["msedge.exe", "Code.exe", "Telegram.exe"],
     "enabled": true,
-    "remarks": "Proxy Domains"
+    "remarks": "Proxy Main"
   },
   {
     "port": "",
@@ -215,14 +190,14 @@
       "domain:iframe.videodelivery.net"
     ],
     "enabled": true,
-    "remarks": "Proxy Domains 2"
+    "remarks": "Proxy Add"
   },
   {
     "port": "",
     "outboundTag": "direct",
-    "domain": ["geosite:ru-category-ru"],
+    "domain": ["geosite:category-ru"],
     "enabled": false,
-    "remarks": "Direct Ru domains"
+    "remarks": "Direct Category Ru"
   },
   {
     "port": "",
