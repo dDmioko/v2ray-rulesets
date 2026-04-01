@@ -186,7 +186,8 @@
       "domain:xsolla.com",
       "domain:xsolla.net",
       "domain:yuanshen.site",
-      "domain:ziffstatic.com"
+      "domain:ziffstatic.com",
+      "domain:notion.site"
     ],
     "enabled": true,
     "remarks": "Proxy Domains"
