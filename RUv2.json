@@ -17,7 +17,18 @@
     "port": "",
     "outboundTag": "direct",
     "ip": ["geoip:private", "geoip:ru"],
-    "domain": ["geosite:private", "geosite:ru-available-only-inside"],
+    "domain": [
+      "geosite:private",
+      "geosite:ru-available-only-inside",
+      "geosite:category-bank-ru",
+      "geosite:mailru-group",
+      "geosite:vk",
+      "geosite:yandex",
+      "geosite:wildberries",
+      "geosite:ozon",
+      "geosite:osu",
+      "domain:ppy.sh"
+    ],
     "process": ["browser.exe"],
     "enabled": true,
     "remarks": "Direct Main"

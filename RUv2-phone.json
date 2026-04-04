@@ -45,16 +45,20 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "domain": ["geosite:ru-category-ru"],
-    "enabled": false,
+    "domain": ["geosite:category-ru"],
+    "enabled": true,
     "remarks": "Direct Ru domains"
   },
   {
     "port": "",
     "outboundTag": "direct",
     "domain": [
+      "geosite:category-bank-ru",
+      "geosite:mailru-group",
       "geosite:vk",
       "geosite:yandex",
+      "geosite:wildberries",
+      "geosite:ozon",
       "domain:desu.me",
       "domain:desu.uno",
       "domain:senkuro.me",
