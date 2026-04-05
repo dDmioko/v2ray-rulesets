@@ -16,20 +16,9 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "ip": ["geoip:private", "geoip:ru"],
-    "domain": [
-      "geosite:private",
-      "geosite:ru-available-only-inside",
-      "geosite:category-bank-ru",
-      "geosite:mailru-group",
-      "geosite:vk",
-      "geosite:yandex",
-      "geosite:wildberries",
-      "geosite:ozon",
-      "geosite:osu",
-      "domain:ppy.sh"
-    ],
-    "process": ["browser.exe"],
+    "ip": ["geoip:private"],
+    "domain": ["geosite:private", "geosite:osu", "domain:ppy.sh"],
+    "process": ["browser.exe", "brave.exe"],
     "enabled": true,
     "remarks": "Direct Main"
   },
@@ -198,17 +187,41 @@
       "domain:img.fantaskycdn.com",
       "domain:udeskglobal.com",
       "domain:cloudflarestream.com",
-      "domain:iframe.videodelivery.net"
+      "domain:iframe.videodelivery.net",
+      "domain:salesmartly.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add"
   },
   {
     "port": "",
-    "outboundTag": "direct",
+    "outboundTag": "byedpi",
+    "domain": ["geosite:ea"],
+    "enabled": true,
+    "remarks": "Byedpi EA"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
+    "ip": ["geoip:ru"],
+    "domain": [
+      "geosite:ru-available-only-inside",
+      "geosite:category-bank-ru",
+      "geosite:mailru-group",
+      "geosite:vk",
+      "geosite:yandex",
+      "geosite:wildberries",
+      "geosite:ozon"
+    ],
+    "enabled": true,
+    "remarks": "Block Ru available only inside"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
     "domain": ["geosite:category-ru"],
     "enabled": false,
-    "remarks": "Direct Category Ru"
+    "remarks": "Block Category Ru"
   },
   {
     "port": "",
