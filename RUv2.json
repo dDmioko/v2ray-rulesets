@@ -168,7 +168,8 @@
       "domain:xsolla.com",
       "domain:xsolla.net",
       "domain:yuanshen.site",
-      "domain:ziffstatic.com"
+      "domain:ziffstatic.com",
+      "domain:armoury-crate.com"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe"],
     "enabled": true,
@@ -188,6 +189,7 @@
       "domain:mega.co.nz",
       "domain:hanidoll.com",
       "domain:hanidoll.ru",
+      "domain:honeydoll.ru",
       "domain:staticdj.com",
       "domain:shoplazza.com",
       "domain:s5.udesk.cn",
@@ -195,7 +197,8 @@
       "domain:udeskglobal.com",
       "domain:cloudflarestream.com",
       "domain:iframe.videodelivery.net",
-      "domain:salesmartly.com"
+      "domain:salesmartly.com",
+      "domain:imagetwist.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add"
