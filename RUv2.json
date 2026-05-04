@@ -102,6 +102,8 @@
       "geosite:wikidot",
       "geosite:x",
       "geosite:yostar",
+      "geosite:amazon",
+      "geosite:amazontrust",
       "domain:2ar.nl",
       "domain:amplitude.com",
       "domain:anidex.info",
@@ -169,7 +171,9 @@
       "domain:xsolla.net",
       "domain:yuanshen.site",
       "domain:ziffstatic.com",
-      "domain:armoury-crate.com"
+      "domain:armoury-crate.com",
+      "domain:endfield.wiki.gg",
+      "domain:openupm.com"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe"],
     "enabled": true,
