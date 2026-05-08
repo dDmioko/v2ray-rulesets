@@ -84,8 +84,6 @@
     "ip": ["geoip:ru-blocked", "geoip:telegram"],
     "domain": [
       "geosite:ru-blocked",
-      "geosite:amazon",
-      "geosite:amazontrust",
       "geosite:aws",
       "geosite:cloudflare",
       "geosite:cloudflare-ipfs",
@@ -202,10 +200,35 @@
       "domain:cloudflarestream.com",
       "domain:iframe.videodelivery.net",
       "domain:salesmartly.com",
-      "domain:imagetwist.com"
+      "domain:imagetwist.com",
+      "domain:retailcrm.pro",
+      "domain:boxberry.de"
     ],
     "enabled": true,
-    "remarks": "Proxy Add"
+    "remarks": "Proxy Add 1"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:atlauncher.com",
+      "domain:nodecdn.net",
+      "domain:feed-the-beast.com",
+      "domain:nucleartech.wiki",
+      "domain:bisecthosting.com",
+      "domain:enigmatica.net",
+      "domain:gdlauncher.com",
+      "domain:cdn-raw.gdl.gg"
+    ],
+    "enabled": true,
+    "remarks": "Proxy Add 2"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": ["geosite:amazon", "geosite:amazontrust"],
+    "enabled": false,
+    "remarks": "Amazon"
   },
   {
     "port": "",
