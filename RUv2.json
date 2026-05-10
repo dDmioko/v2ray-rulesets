@@ -25,10 +25,25 @@
   {
     "port": "",
     "outboundTag": "direct",
+    "domain": ["geosite:amazon", "geosite:amazontrust"],
+    "enabled": true,
+    "remarks": "Amazon"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
     "domain": ["domain:gryphline.com", "domain:anticheatexpert.com"],
     "process": ["D:\\Games\\GRYPHLINK\\", "Endfield.exe"],
     "enabled": true,
     "remarks": "Endfield"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "ip": ["3.34.32.127", "43.201.213.30", "43.202.78.169"],
+    "domain": ["domain:iapis.inface.nexon.com"],
+    "enabled": false,
+    "remarks": "BlueArchive IP"
   },
   {
     "port": "",
@@ -100,8 +115,6 @@
       "geosite:wikidot",
       "geosite:x",
       "geosite:yostar",
-      "geosite:amazon",
-      "geosite:amazontrust",
       "domain:2ar.nl",
       "domain:amplitude.com",
       "domain:anidex.info",
@@ -222,13 +235,6 @@
     ],
     "enabled": true,
     "remarks": "Proxy Add 2"
-  },
-  {
-    "port": "",
-    "outboundTag": "proxy",
-    "domain": ["geosite:amazon", "geosite:amazontrust"],
-    "enabled": false,
-    "remarks": "Amazon"
   },
   {
     "port": "",
