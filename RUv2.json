@@ -26,8 +26,15 @@
     "port": "",
     "outboundTag": "direct",
     "domain": ["geosite:amazon", "geosite:amazontrust"],
-    "enabled": true,
+    "enabled": false,
     "remarks": "Amazon"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": ["geoip:cloudfront"],
+    "enabled": false,
+    "remarks": "Cloudfront"
   },
   {
     "port": "",
@@ -47,11 +54,17 @@
   },
   {
     "port": "",
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "domain": ["geosite:bluearchive", "geosite:nexon"],
-    "process": ["BlueArchive.exe"],
     "enabled": true,
     "remarks": "BlueArchive \u002B Nexon"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "process": ["BlueArchive.exe"],
+    "enabled": true,
+    "remarks": "BlueArchive process"
   },
   {
     "port": "",
