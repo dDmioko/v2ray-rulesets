@@ -18,7 +18,12 @@
     "outboundTag": "direct",
     "ip": ["geoip:private"],
     "domain": ["geosite:private"],
-    "process": ["browser.exe", "brave.exe"],
+    "process": [
+      "browser.exe",
+      "brave.exe",
+      "YandexTelemost.exe",
+      "YandexTelemostUpdateService.exe"
+    ],
     "enabled": true,
     "remarks": "Direct Main"
   },
@@ -167,7 +172,6 @@
       "domain:myorderbox.com",
       "domain:netlify.app",
       "domain:newgrounds.com",
-      "domain:nexus-cdn.com",
       "domain:nitropay.com",
       "domain:nocookie.net",
       "domain:notion.site",
@@ -228,10 +232,13 @@
       "domain:salesmartly.com",
       "domain:imagetwist.com",
       "domain:retailcrm.pro",
-      "domain:boxberry.de"
+      "domain:boxberry.de",
+      "domain:xvideos-cdn.com",
+      "domain:tjk-njk.com",
+      "domain:turboimg.net"
     ],
     "enabled": true,
-    "remarks": "Proxy Add 1"
+    "remarks": "Proxy Add Misc"
   },
   {
     "port": "",
@@ -244,10 +251,19 @@
       "domain:bisecthosting.com",
       "domain:enigmatica.net",
       "domain:gdlauncher.com",
-      "domain:cdn-raw.gdl.gg"
+      "domain:cdn-raw.gdl.gg",
+      "domain:modpackindex.com",
+      "domain:overwolf.com"
     ],
     "enabled": true,
-    "remarks": "Proxy Add 2"
+    "remarks": "Proxy Add Minecraft"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": ["domain:nexus-cdn.com", "domain:esm.sh"],
+    "enabled": true,
+    "remarks": "Proxy Add Nexus"
   },
   {
     "port": "",
