@@ -38,6 +38,7 @@
     "port": "",
     "outboundTag": "direct",
     "ip": ["geoip:cloudfront"],
+    "domain": ["domain:cloudfront.net"],
     "enabled": false,
     "remarks": "Cloudfront"
   },
@@ -54,7 +55,7 @@
     "outboundTag": "proxy",
     "ip": ["3.34.32.127", "43.201.213.30", "43.202.78.169"],
     "domain": ["domain:iapis.inface.nexon.com"],
-    "enabled": false,
+    "enabled": true,
     "remarks": "BlueArchive IP"
   },
   {
@@ -201,9 +202,11 @@
       "domain:ziffstatic.com",
       "domain:armoury-crate.com",
       "domain:endfield.wiki.gg",
-      "domain:openupm.com"
+      "domain:openupm.com",
+      "domain:promeai.pro",
+      "domain:rerenderai.com"
     ],
-    "process": ["Code.exe", "msedge.exe", "Telegram.exe"],
+    "process": ["Code.exe", "msedge.exe", "Telegram.exe", "PEAK.exe"],
     "enabled": true,
     "remarks": "Proxy Main"
   },
@@ -235,7 +238,8 @@
       "domain:boxberry.de",
       "domain:xvideos-cdn.com",
       "domain:tjk-njk.com",
-      "domain:turboimg.net"
+      "domain:turboimg.net",
+      "domain:freem.ne.jp"
     ],
     "enabled": true,
     "remarks": "Proxy Add Misc"
@@ -261,7 +265,7 @@
   {
     "port": "",
     "outboundTag": "proxy",
-    "domain": ["domain:nexus-cdn.com", "domain:esm.sh"],
+    "domain": ["domain:nexus-cdn.com", "domain:esm.sh", "domain:cookiebot.com"],
     "enabled": true,
     "remarks": "Proxy Add Nexus"
   },
