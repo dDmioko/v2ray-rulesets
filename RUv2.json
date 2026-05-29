@@ -2,7 +2,7 @@
   {
     "port": "",
     "outboundTag": "direct",
-    "process": ["self/", "xray/", "ciadpi.exe"],
+    "process": ["self/", "xray/", "ciadpi.exe", "ProxiFyre.exe"],
     "enabled": true,
     "remarks": "Avoid loops"
   },
@@ -77,14 +77,14 @@
     "outboundTag": "proxy",
     "domain": ["geosite:google-gemini", "domain:clients6.google.com"],
     "enabled": true,
-    "remarks": "Proxy Gemini"
+    "remarks": "Gemini"
   },
   {
     "port": "",
     "outboundTag": "byedpi",
-    "domain": ["geosite:google", "geosite:youtube", "domain:docs.google.com"],
+    "domain": ["geosite:youtube"],
     "enabled": true,
-    "remarks": "Byedpi Google\u002BYT"
+    "remarks": "YT"
   },
   {
     "port": "",
@@ -103,14 +103,14 @@
     ],
     "process": ["C:\\Users\\dDmioko\\AppData\\Local\\Discord\\", "Discord.exe"],
     "enabled": true,
-    "remarks": "Proxy Discord"
+    "remarks": "Discord"
   },
   {
     "port": "",
     "outboundTag": "proxy",
     "domain": ["domain:notube.net", "domain:realtimely.io"],
     "enabled": true,
-    "remarks": "Proxy notube"
+    "remarks": "notube"
   },
   {
     "port": "",
@@ -204,7 +204,8 @@
       "domain:endfield.wiki.gg",
       "domain:openupm.com",
       "domain:promeai.pro",
-      "domain:rerenderai.com"
+      "domain:rerenderai.com",
+      "domain:wiki.special-k.info"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe", "PEAK.exe"],
     "enabled": true,
@@ -273,8 +274,8 @@
     "port": "",
     "outboundTag": "byedpi",
     "domain": ["geosite:ea", "geosite:osu"],
-    "enabled": true,
-    "remarks": "Byedpi EA"
+    "enabled": false,
+    "remarks": "EA"
   },
   {
     "port": "",
@@ -290,21 +291,21 @@
       "geosite:ozon"
     ],
     "enabled": true,
-    "remarks": "Block Ru available only inside"
+    "remarks": "Ru available only inside"
   },
   {
     "port": "",
     "outboundTag": "block",
     "domain": ["geosite:category-ru"],
     "enabled": false,
-    "remarks": "Block Category Ru"
+    "remarks": "Category Ru"
   },
   {
     "port": "",
     "outboundTag": "block",
     "domain": ["geosite:category-ads-all"],
     "enabled": true,
-    "remarks": "Block ads"
+    "remarks": "Ads"
   },
   {
     "port": "0-65535",
