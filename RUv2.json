@@ -29,6 +29,13 @@
   },
   {
     "port": "",
+    "outboundTag": "proxy",
+    "process": ["msedge.exe"],
+    "enabled": true,
+    "remarks": "Proxy Process"
+  },
+  {
+    "port": "",
     "outboundTag": "direct",
     "domain": ["geosite:amazon", "geosite:amazontrust"],
     "enabled": false,
@@ -94,7 +101,7 @@
     "port": "",
     "outboundTag": "proxy",
     "domain": ["full:cloudflare-dns.com", "full:dns.google"],
-    "enabled": false,
+    "enabled": true,
     "remarks": "DNS proxy",
     "ruleType": 1
   },
@@ -128,6 +135,13 @@
   },
   {
     "port": "",
+    "outboundTag": "byedpi",
+    "domain": ["domain:images.animelayer.ru"],
+    "enabled": true,
+    "remarks": "ByeDpi Main"
+  },
+  {
+    "port": "",
     "outboundTag": "proxy",
     "domain": [
       "geosite:discord",
@@ -140,7 +154,7 @@
   {
     "port": "",
     "outboundTag": "proxy",
-    "domain": ["domain:notube.net", "domain:realtimely.io"],
+    "domain": ["domain:notube.net", "domain:realtimely.io", "update.notube.lv"],
     "enabled": true,
     "remarks": "notube"
   },
@@ -163,7 +177,6 @@
       "geosite:sentry",
       "geosite:startpage",
       "geosite:telegram",
-      "geosite:wikidot",
       "geosite:x",
       "geosite:yostar",
       "domain:2ar.nl",
@@ -192,7 +205,6 @@
       "domain:foxitsoftware.com",
       "domain:gamedistribution.com",
       "domain:gmodules.com",
-      "domain:hollowknight.wiki",
       "domain:images.weserv.nl",
       "domain:improvedigital.com",
       "domain:inmobi.com",
@@ -227,18 +239,18 @@
       "domain:v2ray.com",
       "domain:v2rayn-g.com",
       "domain:wdfiles.com",
-      "domain:wikimg.net",
       "domain:xsolla.com",
       "domain:xsolla.net",
       "domain:yuanshen.site",
       "domain:ziffstatic.com",
       "domain:armoury-crate.com",
-      "domain:endfield.wiki.gg",
       "domain:openupm.com",
       "domain:promeai.pro",
       "domain:rerenderai.com",
-      "domain:wiki.special-k.info",
-      "domain:senkuro.org"
+      "domain:senkuro.org",
+      "domain:msftconnecttest.com",
+      "domain:touhoufest.org",
+      "domain:touhou-project.news"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe", "PEAK.exe"],
     "enabled": true,
@@ -302,6 +314,22 @@
     "domain": ["domain:nexus-cdn.com", "domain:esm.sh", "domain:cookiebot.com"],
     "enabled": true,
     "remarks": "Proxy Add Nexus"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:wikidot",
+      "domain:hollowknight.wiki",
+      "domain:wikimg.net",
+      "domain:endfield.wiki.gg",
+      "domain:wiki.special-k.info",
+      "domain:bluearchive.wiki",
+      "domain:wikitide.net",
+      "domain:wiki.fextralife.com"
+    ],
+    "enabled": true,
+    "remarks": "Proxy Add Wiki"
   },
   {
     "port": "",
