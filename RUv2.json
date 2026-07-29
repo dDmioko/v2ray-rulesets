@@ -17,7 +17,7 @@
     "port": "",
     "outboundTag": "direct",
     "ip": ["geoip:private"],
-    "domain": ["geosite:private"],
+    "domain": ["geosite:private", "domain:boosty.to"],
     "process": [
       "browser.exe",
       "brave.exe",
@@ -61,7 +61,7 @@
     "port": "",
     "outboundTag": "direct",
     "ip": ["3.34.32.127", "43.201.213.30", "43.202.78.169"],
-    "enabled": true,
+    "enabled": false,
     "remarks": "BlueArchive IP 1"
   },
   {
@@ -169,8 +169,6 @@
       "geosite:cloudflare-ipfs",
       "geosite:dlsite",
       "geosite:gitee",
-      "geosite:google",
-      "geosite:google-play",
       "geosite:google-play",
       "geosite:intel",
       "geosite:openai",
@@ -250,7 +248,10 @@
       "domain:senkuro.org",
       "domain:msftconnecttest.com",
       "domain:touhoufest.org",
-      "domain:touhou-project.news"
+      "domain:touhou-project.news",
+      "domain:rng.moe",
+      "domain:blizzard.com",
+      "domain:playoverwatch.com"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe", "PEAK.exe"],
     "enabled": true,
@@ -285,7 +286,9 @@
       "domain:xvideos-cdn.com",
       "domain:tjk-njk.com",
       "domain:turboimg.net",
-      "domain:freem.ne.jp"
+      "domain:freem.ne.jp",
+      "domain:bepis.moe",
+      "domain:files.payhip.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add Misc"
@@ -326,7 +329,8 @@
       "domain:wiki.special-k.info",
       "domain:bluearchive.wiki",
       "domain:wikitide.net",
-      "domain:wiki.fextralife.com"
+      "domain:wiki.fextralife.com",
+      "domain:game8.co"
     ],
     "enabled": true,
     "remarks": "Proxy Add Wiki"
