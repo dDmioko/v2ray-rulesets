@@ -117,6 +117,20 @@
   },
   {
     "port": "",
+    "outboundTag": "proxy",
+    "domain": ["domain:anthropic.com", "domain:claude.ai"],
+    "enabled": true,
+    "remarks": "AI"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": ["full:www.youtube.com"],
+    "enabled": false,
+    "remarks": "YT DNS"
+  },
+  {
+    "port": "",
     "outboundTag": "byedpi",
     "domain": ["geosite:youtube"],
     "enabled": true,
@@ -130,7 +144,7 @@
       "domain:docs.google.com",
       "domain:drive.google.com"
     ],
-    "enabled": true,
+    "enabled": false,
     "remarks": "Google"
   },
   {
@@ -139,6 +153,13 @@
     "domain": ["domain:images.animelayer.ru"],
     "enabled": true,
     "remarks": "ByeDpi Main"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": ["domain:githubusercontent.com"],
+    "enabled": true,
+    "remarks": "GitHub"
   },
   {
     "port": "",
@@ -251,7 +272,8 @@
       "domain:touhou-project.news",
       "domain:rng.moe",
       "domain:blizzard.com",
-      "domain:playoverwatch.com"
+      "domain:playoverwatch.com",
+      "domain:steamstatic.com"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe", "PEAK.exe"],
     "enabled": true,
@@ -288,7 +310,12 @@
       "domain:turboimg.net",
       "domain:freem.ne.jp",
       "domain:bepis.moe",
-      "domain:files.payhip.com"
+      "domain:files.payhip.com",
+      "domain:adshnk.com",
+      "domain:ngfiles.com",
+      "domain:sprig.com",
+      "domain:hentasis1.top",
+      "domain:avantdoll.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add Misc"
@@ -297,6 +324,7 @@
     "port": "",
     "outboundTag": "proxy",
     "domain": [
+      "domain:mojang.com",
       "domain:atlauncher.com",
       "domain:nodecdn.net",
       "domain:feed-the-beast.com",
@@ -330,7 +358,8 @@
       "domain:bluearchive.wiki",
       "domain:wikitide.net",
       "domain:wiki.fextralife.com",
-      "domain:game8.co"
+      "domain:game8.co",
+      "domain:onrender.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add Wiki"
