@@ -76,7 +76,7 @@
     "outboundTag": "proxy",
     "ip": ["3.125.105.205", "3.69.111.1", "3.78.234.243", "52.59.29.41"],
     "enabled": false,
-    "remarks": "BlueArchive IP 3 (\u043D\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442)"
+    "remarks": "BlueArchive IP 3 (dont work)"
   },
   {
     "port": "",
@@ -150,7 +150,12 @@
   {
     "port": "",
     "outboundTag": "byedpi",
-    "domain": ["domain:images.animelayer.ru"],
+    "domain": [
+      "domain:images.animelayer.ru",
+      "domain:aliexpress.ru",
+      "domain:aliexpress-media.com",
+      "domain:alicdn.com"
+    ],
     "enabled": true,
     "remarks": "ByeDpi Main"
   },
@@ -273,7 +278,8 @@
       "domain:rng.moe",
       "domain:blizzard.com",
       "domain:playoverwatch.com",
-      "domain:steamstatic.com"
+      "domain:steamstatic.com",
+      "domain:intel.com"
     ],
     "process": ["Code.exe", "msedge.exe", "Telegram.exe", "PEAK.exe"],
     "enabled": true,
@@ -315,7 +321,8 @@
       "domain:ngfiles.com",
       "domain:sprig.com",
       "domain:hentasis1.top",
-      "domain:avantdoll.com"
+      "domain:avantdoll.com",
+      "domain:patreonusercontent.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add Misc"
@@ -334,7 +341,8 @@
       "domain:gdlauncher.com",
       "domain:cdn-raw.gdl.gg",
       "domain:modpackindex.com",
-      "domain:overwolf.com"
+      "domain:overwolf.com",
+      "domain:cdn.wynncraft.com"
     ],
     "enabled": true,
     "remarks": "Proxy Add Minecraft"
@@ -359,7 +367,9 @@
       "domain:wikitide.net",
       "domain:wiki.fextralife.com",
       "domain:game8.co",
-      "domain:onrender.com"
+      "domain:onrender.com",
+      "domain:fandom.com",
+      "domain:yuzutrends.app"
     ],
     "enabled": true,
     "remarks": "Proxy Add Wiki"
